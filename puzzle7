@@ -1,0 +1,19 @@
+function repeat(direction) {
+  var count = 0;
+ while (getColor() != "red") {
+    direction();
+ }
+    count = count + 1;
+}
+function repeat2(){
+repeat(down);
+right();
+right();
+repeat(up);
+right();
+right();
+}
+repeat2();
+repeat2();
+repeat(down);
+right();
